@@ -1,50 +1,5 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.component {
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.component.first-component {
-    background-color: lightblue;
-}
-
-.component.second-component {
-    background-color: lightblue;
-}
-
-.component.third-component {
-    background-color: lightblue;
-}
-
-.component.fourth-component {
-    background-color: lightblue;
-}
-
-.component.fifth-component {
-    background-color: lightblue;
-}
-
-h2 {
-    margin: auto;
-    text-align: center;
-}
-
-.pagination-additional-class {
-    margin: 0;
-    position: fixed;
-    top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.pagination-additional-class > li > a, .pagination-additional-class > li > span {
-    margin-right: 50px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
