@@ -9,10 +9,13 @@ import Icon from '@material-ui/core/Icon';
 import HomeIcon from '@material-ui/icons/Home';
 import PersonIcon from '@material-ui/icons/Person';
 import SettingsIcon from '@material-ui/icons/Settings';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+import ToysIcon from '@material-ui/icons/Toys';
 
 const styles = {
   root: {
-    width: 500,
+    backgroundColor:'#80DEEA',
   },
 };
 
@@ -36,10 +39,13 @@ class App extends Component {
         <h1>Sangamithra Kal</h1>
        </header>
        <div className="App-footer"> 
-        <BottomNavigation value={value} onChange={this.handleChange} >
+        <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
         <BottomNavigationAction label="Home" value="home" icon={<HomeIcon />} />
         <BottomNavigationAction label="About Me" value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" value="settings" icon={<SettingsIcon />} />
+        <BottomNavigationAction label="Education" value="school" icon={<SchoolIcon />} />
+        <BottomNavigationAction label="Experience" value="work" icon={<WorkIcon />} />
+        <BottomNavigationAction label="Hobbies" value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>
       </div>
