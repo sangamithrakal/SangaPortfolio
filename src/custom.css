@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h3 {
+    font-size: 2em;
+}
+
+.timelineStyle {
+    background-color: #CCCCCC;
+    padding: 10px;
+    /* font-family: 'Indie Flower', cursive; */
+}
+
+.outsideTimeline {
+    background-color: #DDDDDD;
+}
+
+.badge {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 15px;
+    border: solid #666666 1px;
+    padding: 1px 10px;
+    margin-right: 5px;
+    background-color: #DDDDDD;
+}
