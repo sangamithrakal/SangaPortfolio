@@ -12,6 +12,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import ToysIcon from '@material-ui/icons/Toys';
+import Experience from './Experience';
 
 const styles = {
   root: {
@@ -38,6 +39,7 @@ class App extends Component {
         <header className="App-header">
         <h1>Sangamithra Kal</h1>
        </header>
+       <Experience/>
        <div className="App-footer"> 
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
         <BottomNavigationAction label="Home" value="home" icon={<HomeIcon />} />
