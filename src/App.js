@@ -13,7 +13,11 @@ import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import ToysIcon from '@material-ui/icons/Toys';
 import Experience from './Experience';
-
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import AboutMe from './AboutMe';
+import Skills from './Skills';
+ 
 const styles = {
   root: {
     backgroundColor:'#80DEEA',
@@ -21,6 +25,51 @@ const styles = {
 };
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+    this.scrollToBottom = this.scrollToBottom.bind(this);
+  }
+
+  componentDidMount() {
+
+    Events.scrollEvent.register('begin', function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function () {
+      console.log("end", arguments);
+    });
+
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+
+  scrollToAboutMe() {
+    scroller.scrollTo('AboutMe', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+  scrollToSkills() {
+    scroller.scrollTo('Skills', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
 
   state = {
     value: 'recents',
@@ -39,14 +88,20 @@ class App extends Component {
         <header className="App-header">
         <h1>Sangamithra Kal</h1>
        </header>
+       <Element name="AboutMe">
+       <AboutMe/>
+       </Element>
+       <Element name="Skills">
+       <Skills/>
+       </Element>
        <Experience/>
        <div className="App-footer"> 
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
-        <BottomNavigationAction label="Home" value="home" icon={<HomeIcon />} />
-        <BottomNavigationAction label="About Me" value="person" icon={<PersonIcon />} />
-        <BottomNavigationAction label="Skills" value="settings" icon={<SettingsIcon />} />
-        <BottomNavigationAction label="Education" value="school" icon={<SchoolIcon />} />
+        <BottomNavigationAction label="Home" onClick={this.scrollToTop} value="home" icon={<HomeIcon />} />
+        <BottomNavigationAction label="About Me" onClick={() => this.scrollToAboutMe()}  value="person" icon={<PersonIcon />} />
+        <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
         <BottomNavigationAction label="Experience" value="work" icon={<WorkIcon />} />
+        <BottomNavigationAction label="Education" onClick={this.scrollToBottom} value="school" icon={<SchoolIcon />} />
         <BottomNavigationAction label="Hobbies" value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>
