@@ -16,87 +16,110 @@ class Experience extends Component {
         <VerticalTimeline className="timelineStyle">
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2011 - present"
+            date="2011 - 2018"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red' }}
             icon={<WorkIcon />}
             >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <p><span className="badge"><Crown /> ASP.Net</span>
+            <span className="badge"><StarIcon /> SQL Server</span>
+            <span className="badge"><StarIcon /> SharePoint</span></p>
+            <h3 className="vertical-timeline-element-title">SpurTree Technologies</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bangalore</h4>
             <p>
-                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+               Technical Project Manager
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="2008 - 2011"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red' }}
             icon={<WorkIcon />}
             >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p><span className="badge"><Crown /> ASP.Net</span>
+            <span className="badge"><StarIcon /> SQL Server</span>
+            <span className="badge"><StarIcon /> SSIS, SSRS</span></p>
+            <h3 className="vertical-timeline-element-title">Ciber GSC</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bangalore</h4>
             <p>
-                Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                Senior Software Consultant
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
+            date="2007 - 2008"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
             >
-            <p><span className="badge"><Crown /> Queen .Net</span><span className="badge"><StarIcon /> Sex Goddess</span></p>
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+            <p><span className="badge"><Crown /> ASP.Net</span>
+            <span className="badge"><StarIcon /> SQL Server</span>
+            <span className="badge"><StarIcon /> Java</span></p>
+            <h3 className="vertical-timeline-element-title">Mphasis</h3>
+            <h4 className="vertical-timeline-element-subtitle">Chennai</h4>
             <p>
-                User Experience, Visual Design
+                Senior Software Engineer
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2006 - 2008"
+            date="2003 - 2007"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
             >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <p><span className="badge"><Crown /> ASP.Net</span>
+            <span className="badge"><StarIcon /> SQL Server</span>
+            <span className="badge"><StarIcon /> Java</span></p>
+            <h3 className="vertical-timeline-element-title">Photon Infotech</h3>
+            <h4 className="vertical-timeline-element-subtitle">Chennai</h4>
             <p>
-                User Experience, Visual Design
+                Software Engineer
+            </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2002 - 2003"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<WorkIcon />}
+            >
+            <h4 className="vertical-timeline-element-title">Junior Processing Officer</h4>
+            <h3 className="vertical-timeline-element-subtitle">Citicorp Financial Services (E-serve)</h3>
+            <p>
+                Retail Banking
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="April 2013"
+            date="April 2002"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             icon={<SchoolIcon />}
             >
-            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-            <p>
-                Strategy, Social Media
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
-            >
-            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
+            <h4 className="vertical-timeline-element-title">NIIT</h4>
             <h4 className="vertical-timeline-element-subtitle">Certification</h4>
             <p>
-                Creative Direction, User Experience, Visual Design
+                Application Development
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="1999 - 2002"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             icon={<SchoolIcon />}
             >
-            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+            <h4 className="vertical-timeline-element-title">Master of Computer Application</h4>
+            <h4 className="vertical-timeline-element-subtitle">Masters</h4>
+            <p>
+                Commputer Science
+            </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="1996 - 1999"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<SchoolIcon />}
+            >
+            <h4 className="vertical-timeline-element-title">Bachelor of Commerce</h4>
             <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
             <p>
-                Creative Direction, Visual Design
+                Commerce , Accountancy
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement

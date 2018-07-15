@@ -17,6 +17,7 @@ import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import AboutMe from './AboutMe';
 import Skills from './Skills';
+import Hobbies from './Hobbies';
  
 const styles = {
   root: {
@@ -66,6 +67,20 @@ class App extends Component {
       smooth: 'easeInOutQuart'
     })
   }
+  scrollToExperience() {
+    scroller.scrollTo('Experience', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+  scrollToHobbies() {
+    scroller.scrollTo('Hobbies', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
@@ -94,15 +109,20 @@ class App extends Component {
        <Element name="Skills">
        <Skills/>
        </Element>
+       <Element name="Experience">
        <Experience/>
+       </Element>
+       <Element name="Hobbies">
+       <Hobbies/>
+       </Element>
        <div className="App-footer"> 
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
         <BottomNavigationAction label="Home" onClick={this.scrollToTop} value="home" icon={<HomeIcon />} />
         <BottomNavigationAction label="About Me" onClick={() => this.scrollToAboutMe()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
-        <BottomNavigationAction label="Experience" value="work" icon={<WorkIcon />} />
-        <BottomNavigationAction label="Education" onClick={this.scrollToBottom} value="school" icon={<SchoolIcon />} />
-        <BottomNavigationAction label="Hobbies" value="toys" icon={<ToysIcon />} />
+        <BottomNavigationAction label="Experience"onClick={() => this.scrollToExperience()}  value="work" icon={<WorkIcon />} />
+        <BottomNavigationAction label="Education" value="school" icon={<SchoolIcon />} />
+        <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>
       </div>
