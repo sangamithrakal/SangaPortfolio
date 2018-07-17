@@ -8,18 +8,57 @@ import Crown from './CrownIcon'
 import StarIcon from 'react-icons/lib/fa/star'
 import SchoolIcon from 'react-icons/lib/fa/anchor'
 import './custom.css'
+import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
+const styles = theme => ({
+    root: {
+      flexGrow: 1,
+    },
+    paper: {
+      height: 200,
+      width: 200,
+      padding: theme.spacing.unit * 2,
+      elevation : 24,
+      background: '#CE93D8',
+    },
+    control: {
+      padding: theme.spacing.unit * 2,
+    },
+  });
 class Hobbies extends Component {
     render() {
+        const { classes } = this.props;
       return (
-        <div className="pageContainer"> 
-            HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES 
-            HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES 
-            HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES HOBBIES 
-        </div>
+        <div className="pageContainer" style={{ padding: 100 , textAlign:'center' ,verticalAlign:'middle' }}> 
+          <div style={{ padding: 40 , color: 'red' }}> <h2> INTERESTS </h2></div>    
+        <Grid container className={classes.root} spacing={16}>
+           <Grid item xs={12}>
+           <Grid container justify="center" spacing={8}>
+               <Grid item>
+                   <Paper className={classes.paper} />
+               </Grid>
+               <Grid item>
+                   <Paper className={classes.paper} />
+               </Grid>
+               <Grid  item>
+                   <Paper className={classes.paper} />
+               </Grid>
+               <Grid item>
+                   <Paper className={classes.paper} />
+               </Grid>
+               <Grid item>
+                   <Paper className={classes.paper} />
+               </Grid>
+           </Grid>
+           </Grid>
+   </Grid>
+   
+     </div>
 
     );
 }
 }
 
-export default Hobbies;
+export default withStyles(styles)(Hobbies);
