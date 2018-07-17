@@ -37,19 +37,29 @@ class Hobbies extends Component {
            <Grid item xs={12}>
            <Grid container justify="center" spacing={8}>
                <Grid item>
-                   <Paper className={classes.paper} />
+                   <Paper className={classes.paper}>
+                     <div style={{ padding: 40 }}> Vegan baking and cooking </div>
+                   </Paper>
                </Grid>
                <Grid item>
-                   <Paper className={classes.paper} />
+                   <Paper className={classes.paper}>
+                   <div style={{ padding: 40 }}> Animal Rescue </div>
+                   </Paper>
                </Grid>
                <Grid  item>
-                   <Paper className={classes.paper} />
+                   <Paper className={classes.paper}>
+                   <div style={{ padding: 40 }}> Reading </div>
+                   </Paper>
                </Grid>
                <Grid item>
-                   <Paper className={classes.paper} />
+                   <Paper className={classes.paper}>
+                   <div style={{ padding: 40 }}>  Writing  </div>
+                   </Paper>
                </Grid>
                <Grid item>
-                   <Paper className={classes.paper} />
+                   <Paper className={classes.paper}>
+                   <div style={{ padding: 40 }}>  Gardening and home improvements </div>
+                   </Paper>
                </Grid>
            </Grid>
            </Grid>

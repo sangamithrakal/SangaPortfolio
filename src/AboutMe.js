@@ -38,8 +38,8 @@ class AboutMe extends Component {
         console.log(classes);
       return (
         <div  className="pageContainer"> 
-        <Grid container>
-        <Grid item xs={6}>
+        <Grid container  >
+        <Grid item lg= {6} xs= {12}>
             <div style={{ padding: 80 , textAlign:'center' ,verticalAlign:'middle' }}>
               I have more than 16 years of experience in the software industry, working on a wide range of technologies and being involved in all aspects of software design and development. 
               <br/>
@@ -50,10 +50,9 @@ class AboutMe extends Component {
               C#, ASP.NET Frameworks, Azure, SharePoint 2013 , Win RT (Universal) Mobile Platform , SQL Server , SQL Server Reporting Services 
             </div>
         </Grid>
-        <Grid item xs={6} > 
+        <Grid item lg= {6} xs={12} > 
            <div style={{ padding: 60 , textAlign:'center' ,verticalAlign:'middle' }}>
             <Avatar
-                alt="Adelle Charles"
                 src={Sangi}
                 className={classNames(classes.avatar, classes.bigAvatar)}
             />
