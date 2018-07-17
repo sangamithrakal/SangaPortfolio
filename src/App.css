@@ -8,10 +8,10 @@
 }
 
 .App-header {
-  background-color: #80DEEA;
+  background-color: #37474F;
   height: 80px;
   padding: 20px;
-  color: black;
+  color: white;
 
 }
 
@@ -23,7 +23,6 @@
   text-align: center;
   display:flex;
   vertical-align:middle;
-  max-width: 800px;
  }
 .App-footer {
   position: fixed;
@@ -41,6 +40,13 @@
   font-size: large;
 }
 
+.pageContainer {
+  display: -ms-flexbox;
+  display: flex; 
+  min-height: calc(100vh);
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 
 
 @keyframes App-logo-spin {

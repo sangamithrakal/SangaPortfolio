@@ -12,6 +12,7 @@ import './custom.css'
 class Experience extends Component {
     render() {
       return (
+        <div className="pageContainer"> 
         <div className="outsideTimeline">
         <VerticalTimeline className="timelineStyle">
             <VerticalTimelineElement
@@ -127,6 +128,7 @@ class Experience extends Component {
             icon={<StarIcon />}
             />
         </VerticalTimeline>
+  </div>
   </div>
       );
     }

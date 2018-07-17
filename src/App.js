@@ -21,7 +21,7 @@ import Hobbies from './Hobbies';
  
 const styles = {
   root: {
-    backgroundColor:'#80DEEA',
+    backgroundColor:'#B0BEC5',
   },
 };
 
@@ -117,8 +117,7 @@ class App extends Component {
        </Element>
        <div className="App-footer"> 
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
-        <BottomNavigationAction label="Home" onClick={this.scrollToTop} value="home" icon={<HomeIcon />} />
-        <BottomNavigationAction label="About Me" onClick={() => this.scrollToAboutMe()}  value="person" icon={<PersonIcon />} />
+        <BottomNavigationAction label="About Me" onClick={() => this.scrollToTop()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
         <BottomNavigationAction label="Experience"onClick={() => this.scrollToExperience()}  value="work" icon={<WorkIcon />} />
         <BottomNavigationAction label="Education" value="school" icon={<SchoolIcon />} />
