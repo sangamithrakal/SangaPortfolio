@@ -19,7 +19,8 @@ import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } 
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Hobbies from './Hobbies';
- 
+import Grid from '@material-ui/core/Grid';
+
 const styles = {
   root: {
     backgroundColor:'#B0BEC5',
@@ -107,13 +108,19 @@ class App extends Component {
     const { value } = this.state;
 
     return (
-      <div className="App">
+      <Grid className="App">
+        <Grid>
         <header className="App-header">
         <h1>Sangamithra Kal</h1>
-       </header>
+        </header>
+        </Grid>
+
+       <Grid>
        <Element name="AboutMe">
        <AboutMe/>
        </Element>
+       </Grid>
+       
        <Element name="Skills">
        <Skills/>
        </Element>
@@ -135,7 +142,7 @@ class App extends Component {
         <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>
-      </div>
+      </Grid>
     );
   }
 }
