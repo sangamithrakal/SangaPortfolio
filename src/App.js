@@ -13,6 +13,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import ToysIcon from '@material-ui/icons/Toys';
 import Experience from './Experience';
+import Education from './Education';
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import AboutMe from './AboutMe';
@@ -74,6 +75,13 @@ class App extends Component {
       smooth: 'easeInOutQuart'
     })
   }
+  scrollToEducation() {
+    scroller.scrollTo('Education', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
   scrollToHobbies() {
     scroller.scrollTo('Hobbies', {
       duration: 800,
@@ -112,6 +120,9 @@ class App extends Component {
        <Element name="Experience">
        <Experience/>
        </Element>
+       <Element name="Education">
+       <Education/>
+       </Element>
        <Element name="Hobbies">
        <Hobbies/>
        </Element>
@@ -120,7 +131,7 @@ class App extends Component {
         <BottomNavigationAction label="About Me" onClick={() => this.scrollToTop()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
         <BottomNavigationAction label="Experience"onClick={() => this.scrollToExperience()}  value="work" icon={<WorkIcon />} />
-        <BottomNavigationAction label="Education" value="school" icon={<SchoolIcon />} />
+        <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} />
         <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>

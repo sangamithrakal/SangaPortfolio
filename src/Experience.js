@@ -14,6 +14,7 @@ class Experience extends Component {
       return (
         <div className="pageContainer"> 
         <div className="outsideTimeline">
+        <h2> EXPERIENCE</h2>
         <VerticalTimeline className="timelineStyle">
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -87,46 +88,6 @@ class Experience extends Component {
                 Retail Banking
             </p>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2002"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
-            >
-            <h4 className="vertical-timeline-element-title">NIIT</h4>
-            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-            <p>
-                Application Development
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="1999 - 2002"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
-            >
-            <h4 className="vertical-timeline-element-title">Master of Computer Application</h4>
-            <h4 className="vertical-timeline-element-subtitle">Masters</h4>
-            <p>
-                Commputer Science
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="1996 - 1999"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
-            >
-            <h4 className="vertical-timeline-element-title">Bachelor of Commerce</h4>
-            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-            <p>
-                Commerce , Accountancy
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            icon={<StarIcon />}
-            />
         </VerticalTimeline>
   </div>
   </div>

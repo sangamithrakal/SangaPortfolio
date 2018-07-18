@@ -11,6 +11,11 @@ import './custom.css'
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Cake from './CakeIcon';
+import Paw from './Paw';
+import Books from './Books';
+import Writing from './Writing';
+import Home from './Home';
 
 const styles = theme => ({
     root: {
@@ -38,26 +43,31 @@ class Hobbies extends Component {
            <Grid container justify="center" spacing={8}>
                <Grid item>
                    <Paper className={classes.paper}>
+                     <Cake style={{fontSize: 80}}/>
                      <div style={{ padding: 40 }}> Vegan baking and cooking </div>
                    </Paper>
                </Grid>
                <Grid item>
                    <Paper className={classes.paper}>
-                   <div style={{ padding: 40 }}> Animal Rescue </div>
+                   <Paw style={{fontSize: 80}}/>
+                   <div style={{ padding: 40 }}> Animal Rescue and Rehabilitation </div>
                    </Paper>
                </Grid>
                <Grid  item>
                    <Paper className={classes.paper}>
+                   <Books style={{fontSize: 80}}/>
                    <div style={{ padding: 40 }}> Reading </div>
                    </Paper>
                </Grid>
                <Grid item>
                    <Paper className={classes.paper}>
+                   <Writing style={{fontSize: 80}}/>
                    <div style={{ padding: 40 }}>  Writing  </div>
                    </Paper>
                </Grid>
                <Grid item>
                    <Paper className={classes.paper}>
+                   <Home style={{fontSize: 80}}/>
                    <div style={{ padding: 40 }}>  Gardening and home improvements </div>
                    </Paper>
                </Grid>
