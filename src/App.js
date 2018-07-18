@@ -127,9 +127,9 @@ class App extends Component {
        <Element name="Experience">
        <Experience/>
        </Element>
-       <Element name="Education">
+       {/* <Element name="Education">
        <Education/>
-       </Element>
+       </Element> */}
        <Element name="Hobbies">
        <Hobbies/>
        </Element>
@@ -138,7 +138,7 @@ class App extends Component {
         <BottomNavigationAction label="About Me" onClick={() => this.scrollToTop()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
         <BottomNavigationAction label="Experience"onClick={() => this.scrollToExperience()}  value="work" icon={<WorkIcon />} />
-        <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} />
+        {/* <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} /> */}
         <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </div>

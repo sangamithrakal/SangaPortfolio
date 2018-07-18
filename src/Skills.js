@@ -36,8 +36,8 @@ class Skills extends Component {
     render() {
         const { classes } = this.props;
         return (
-        <div className="pageContainer" style={{ padding: 30 , textAlign:'center' ,verticalAlign:'middle' }}> 
-             <div style={{ padding: 40 }}> <h2>SKILLS </h2></div>
+        <Grid className="pageContainer"> 
+             <Grid> <h2>SKILLS </h2></Grid>
              <Grid container className={classes.root} spacing={16}>
                 <Grid item xs={12}>
                 <Grid container justify="center" spacing={8}>
@@ -96,7 +96,7 @@ class Skills extends Component {
                 </Grid>
         </Grid>
         
-          </div>
+</Grid>
 
     );
 }
