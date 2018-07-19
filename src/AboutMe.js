@@ -39,7 +39,7 @@ class AboutMe extends Component {
       return (
         <Grid  className="pageContainer"> 
         <Grid container className={classes.container} alignItems='center'>
-        <Grid item lg= {6} xs= {6} >
+        <Grid item lg= {6} xs= {12} >
             <Grid >
               I have more than 16 years of experience in the software industry, working on a wide range of technologies and being involved in all aspects of software design and development. 
               <br/>
@@ -52,8 +52,8 @@ class AboutMe extends Component {
             
         </Grid>
 
-        <Grid  container  alignItems ='center' lg= {6} xs={6} md={6}> 
-          <Grid justify='center' container>
+        <Grid  container  alignItems ='center' lg= {6} xs={12} md={6}> 
+          <Grid justify='center' container className={classes.container} >
             <Avatar
                 src={Sangi}
                 className={classNames(classes.avatar, classes.bigAvatar)}

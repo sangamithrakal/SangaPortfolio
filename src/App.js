@@ -133,7 +133,7 @@ class App extends Component {
        <Element name="Hobbies">
        <Hobbies/>
        </Element>
-       <div className="App-footer"> 
+       <Grid className="App-footer"> 
         <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
         <BottomNavigationAction label="About Me" onClick={() => this.scrollToTop()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
@@ -141,7 +141,7 @@ class App extends Component {
         {/* <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} /> */}
         <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
-      </div>
+      </Grid>
       </Grid>
     );
   }

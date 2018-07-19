@@ -31,6 +31,7 @@
   width:100%;
   text-align: center;
   height: 46px;
+  min-width: calc(100vw);
 }
 
 .App-title {
