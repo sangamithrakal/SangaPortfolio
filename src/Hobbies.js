@@ -27,7 +27,7 @@ const styles = theme => ({
       padding: theme.spacing.unit * 2,
       elevation : 24,
       background: '#CE93D8',
-      marginRight: theme.spacing.unit * 2,
+      margin: theme.spacing.unit * 2,
     },
     control: {
       padding: theme.spacing.unit * 2,

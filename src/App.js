@@ -138,7 +138,7 @@ class App extends Component {
        <Education/>
        </Element> */}
        
-       <Grid>
+       <Grid style={{marginBottom:'50px'}}>
        <Element name="Hobbies">
        <Hobbies/>
        </Element>

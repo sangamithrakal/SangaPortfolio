@@ -25,7 +25,7 @@ const styles = theme => ({
       minHeight : theme.spacing.unit * 30,
       padding: theme.spacing.unit * 2,
       background: '#E3F2FD',
-      marginRight: theme.spacing.unit * 2,
+      margin: theme.spacing.unit * 2,
     },
     control: {
       padding: theme.spacing.unit * 2,
