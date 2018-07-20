@@ -27,6 +27,7 @@ const styles = theme => ({
       padding: theme.spacing.unit * 2,
       elevation : 24,
       background: '#CE93D8',
+      marginRight: theme.spacing.unit * 2,
     },
     control: {
       padding: theme.spacing.unit * 2,
@@ -36,11 +37,9 @@ class Hobbies extends Component {
     render() {
         const { classes } = this.props;
       return (
-        <div className="pageContainer" style={{ padding: 100 , textAlign:'center' ,verticalAlign:'middle' }}> 
-          <div style={{ padding: 40 , color: 'red' }}> <h2> INTERESTS </h2></div>    
-        <Grid container className={classes.root} spacing={16}>
-           <Grid item xs={12}>
-           <Grid container justify="center" spacing={8}>
+        <Grid className="pageContainer"> 
+           <Grid item xs={12}><h2> INTERESTS </h2></Grid>    
+           <Grid container justify="center">
                <Grid item>
                    <Paper className={classes.paper}>
                      <Cake style={{fontSize: 80}}/>
@@ -73,11 +72,7 @@ class Hobbies extends Component {
                </Grid>
            </Grid>
            </Grid>
-   </Grid>
-   
-     </div>
-
-    );
+  );
 }
 }
 

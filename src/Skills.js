@@ -22,10 +22,10 @@ const styles = theme => ({
       flexGrow: 1,
     },
     paper: {
-      height: 300,
-      width: 200,
+      minHeight : theme.spacing.unit * 30,
       padding: theme.spacing.unit * 2,
       background: '#E3F2FD',
+      marginRight: theme.spacing.unit * 2,
     },
     control: {
       padding: theme.spacing.unit * 2,
@@ -38,9 +38,9 @@ class Skills extends Component {
         return (
         <Grid className="pageContainer"> 
              <Grid> <h2>SKILLS </h2></Grid>
-             <Grid container className={classes.root} spacing={16}>
+             <Grid container >
                 <Grid item xs={12}>
-                <Grid container justify="center" spacing={8}>
+                <Grid container justify="center" >
                     <Grid item>
                         <Paper className={classes.paper}>
                         <div style={{ padding: 40 }}>

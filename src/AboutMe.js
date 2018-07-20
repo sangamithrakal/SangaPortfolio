@@ -19,7 +19,7 @@ import { SocialIcon } from 'react-social-icons';
 const styles = theme => ({
     root: {
         flexGrow: 1,
- 
+        background : '#D1C4E9',
         textAlign: 'center',
       },
 
@@ -37,7 +37,7 @@ class AboutMe extends Component {
         const { classes } = this.props;
         console.log(classes);
       return (
-        <Grid  className="pageContainer"> 
+        <Grid  className="pageContainer" className={classes.root}> 
         <Grid container className={classes.container} alignItems='center'>
         <Grid item lg= {6} xs= {12} >
             <Grid >
@@ -52,7 +52,7 @@ class AboutMe extends Component {
             
         </Grid>
 
-        <Grid  container  alignItems ='center' lg= {6} xs={12} md={6}> 
+        <Grid  item   lg= {6} xs={12} md={6}> 
           <Grid justify='center' container className={classes.container} >
             <Avatar
                 src={Sangi}

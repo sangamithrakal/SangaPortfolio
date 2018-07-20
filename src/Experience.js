@@ -8,12 +8,13 @@ import Crown from './CrownIcon'
 import StarIcon from 'react-icons/lib/fa/star'
 import SchoolIcon from 'react-icons/lib/fa/anchor'
 import './custom.css'
+import { Grid } from '../node_modules/@material-ui/core';
 
 class Experience extends Component {
     render() {
       return (
-        <div className="pageContainer"> 
-        <div className="outsideTimeline">
+        <Grid className="pageContainer"> 
+        <Grid className="outsideTimeline">
         <h2> EXPERIENCE</h2>
         <VerticalTimeline className="timelineStyle">
             <VerticalTimelineElement
@@ -22,8 +23,7 @@ class Experience extends Component {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red' }}
             icon={<WorkIcon />}
             >
-            <p><span className="badge"><Crown /> ASP.Net</span>
-            <span className="badge"><StarIcon /> SQL Server</span>
+            <p><span className="badge"><Crown /> .Net</span>
             <span className="badge"><StarIcon /> SharePoint</span></p>
             <h3 className="vertical-timeline-element-title">SpurTree Technologies</h3>
             <h4 className="vertical-timeline-element-subtitle">Bangalore</h4>
@@ -37,9 +37,9 @@ class Experience extends Component {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red' }}
             icon={<WorkIcon />}
             >
-            <p><span className="badge"><Crown /> ASP.Net</span>
+            <p><span className="badge"><Crown /> .Net</span>
             <span className="badge"><StarIcon /> SQL Server</span>
-            <span className="badge"><StarIcon /> SSIS, SSRS</span></p>
+            <span className="badge"><StarIcon /> SSRS</span></p>
             <h3 className="vertical-timeline-element-title">Ciber GSC</h3>
             <h4 className="vertical-timeline-element-subtitle">Bangalore</h4>
             <p>
@@ -52,7 +52,7 @@ class Experience extends Component {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
             >
-            <p><span className="badge"><Crown /> ASP.Net</span>
+            <p><span className="badge"><Crown /> .Net</span>
             <span className="badge"><StarIcon /> SQL Server</span>
             <span className="badge"><StarIcon /> Java</span></p>
             <h3 className="vertical-timeline-element-title">Mphasis</h3>
@@ -67,7 +67,7 @@ class Experience extends Component {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
             >
-            <p><span className="badge"><Crown /> ASP.Net</span>
+            <p><span className="badge"><Crown /> .Net</span>
             <span className="badge"><StarIcon /> SQL Server</span>
             <span className="badge"><StarIcon /> Java</span></p>
             <h3 className="vertical-timeline-element-title">Photon Infotech</h3>
@@ -89,8 +89,8 @@ class Experience extends Component {
             </p>
             </VerticalTimelineElement>
         </VerticalTimeline>
-  </div>
-  </div>
+  </Grid>
+  </Grid>
       );
     }
   }

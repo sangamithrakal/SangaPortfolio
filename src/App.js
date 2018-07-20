@@ -22,8 +22,9 @@ import Hobbies from './Hobbies';
 import Grid from '@material-ui/core/Grid';
 
 const styles = {
-  root: {
-    backgroundColor:'#B0BEC5',
+  footer: {
+    backgroundColor:'#EDE7F6',
+    color : 'white',
   },
 };
 
@@ -111,7 +112,7 @@ class App extends Component {
       <Grid className="App">
         <Grid>
         <header className="App-header">
-        <h1>Sangamithra Kal</h1>
+        <h1>SANGAMITHRA KAL</h1>
         </header>
         </Grid>
 
@@ -120,25 +121,35 @@ class App extends Component {
        <AboutMe/>
        </Element>
        </Grid>
-       
+
+       <Grid>
        <Element name="Skills">
        <Skills/>
        </Element>
+       </Grid>
+
+      <Grid>
        <Element name="Experience">
        <Experience/>
        </Element>
+       </Grid>
+
        {/* <Element name="Education">
        <Education/>
        </Element> */}
+       
+       <Grid>
        <Element name="Hobbies">
        <Hobbies/>
        </Element>
+       </Grid>
+
        <Grid className="App-footer"> 
-        <BottomNavigation value={value} onChange={this.handleChange} className={classes.root} >
+        <BottomNavigation value={value} onChange={this.handleChange} className={classes.footer} >
         <BottomNavigationAction label="About Me" onClick={() => this.scrollToTop()}  value="person" icon={<PersonIcon />} />
         <BottomNavigationAction label="Skills" onClick={() => this.scrollToSkills()} value="settings" icon={<SettingsIcon />} />
         <BottomNavigationAction label="Experience"onClick={() => this.scrollToExperience()}  value="work" icon={<WorkIcon />} />
-        {/* <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} /> */}
+        {/* <BottomNavigationAction label="Education" onClick={() => this.scrollToEducation()} value="school" icon={<SchoolIcon />} />  */}
         <BottomNavigationAction label="Hobbies"  onClick={this.scrollToHobbies} value="toys" icon={<ToysIcon />} />
       </BottomNavigation>
       </Grid>
